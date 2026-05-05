@@ -1,0 +1,21 @@
+create table Customer (
+CustomerId int primary key,
+CustomerName varchar(100),
+Customer_DOB varchar(20),
+Cust_PhoneNumber Varchar(15),
+Cust_Email varchar(100),
+Cust_Address1 varchar(500),
+Cust_Address2 varchar(500),
+Cust_City varchar(100),
+Cust_County varchar(100),
+Cust_ZipCode int,
+Cust_PaymentMethod varchar(20),
+Cust_AmountPaid decimal(18,2),
+Cust_Rewards int,
+Cust_TotalItems int,
+Cust_Orders int,
+Cust_OrderNumber varchar(25),
+Cust_ReferenceNumber varchar(25),
+Cust_CreatedDate datetime DEFAULT Getdate(),
+Cust_ModifiedDate datetime DEFAULT Getdate()
+);
