@@ -1,0 +1,25 @@
+CREATE TABLE CustomerHistory
+(
+    HistoryId INT IDENTITY(1,1) PRIMARY KEY,
+    CustomerId INT,
+    CustomerName VARCHAR(100),
+    Customer_DOB VARCHAR(20),
+    Cust_PhoneNumber VARCHAR(15),
+    Cust_Email VARCHAR(100),
+    Cust_Address1 VARCHAR(500),
+    Cust_Address2 VARCHAR(500),
+    Cust_City VARCHAR(100),
+    Cust_County VARCHAR(100),
+    Cust_ZipCode INT,
+    Cust_PaymentMethod VARCHAR(20),
+    Cust_AmountPaid DECIMAL(18,2),
+    Cust_Rewards INT,
+    Cust_TotalItems INT,
+    Cust_Orders INT,
+    Cust_OrderNumber VARCHAR(25),
+    Cust_ReferenceNumber VARCHAR(25),
+    Cust_CreatedDate DATETIME,
+    Cust_ModifiedDate DATETIME,
+    DeletedDate DATETIME DEFAULT GETDATE(),
+    DeletedBy VARCHAR(200)
+);
